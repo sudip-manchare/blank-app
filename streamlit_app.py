@@ -120,7 +120,7 @@ def scan_ip_range(start_ip: str, end_ip: str, port: int = 80, timeout: float = 1
 
 def call_gemini_with_tools(query: str, api_key: str) -> Dict[str, Any]:
     """Call Gemini API with function calling"""
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
     
     headers = {"Content-Type": "application/json"}
     
